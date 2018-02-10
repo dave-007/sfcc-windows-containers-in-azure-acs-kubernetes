@@ -97,7 +97,7 @@ az resource list --resource-group $newGroup.name -o table
 
 az acs kubernetes -h
 #install the kubectl program if not yet installed
-#might need admin rights to install
+#might need admin rights to install, can install to alternate location
 
 az acs kubernetes install-cli -h
 az acs kubernetes install-cli

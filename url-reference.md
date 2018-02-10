@@ -18,8 +18,13 @@
 
 
 ## Next Steps
-KubeCtl reference
 
-Helm reference
 
-[Draft configuration walkthrough on YouTube](https://www.youtube.com/watch?v=7N7vdOa-TPI)
+
+[KubeCtl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) - Learn kubectl command line tool to manage your clusters.
+
+[Helm reference](https://docs.helm.sh/helm/) - The best way to deploy code to Kubernetes as part of a continuous integration process
+
+[Use external-dns to assign DNS hostname automatically to deployed containers](https://github.com/kubernetes-incubator/external-dns]) - The next thing I'm learning. Once I deploy I want a DNS name to be assigned automatically.
+
+[Draft configuration walkthrough on YouTube](https://www.youtube.com/watch?v=7N7vdOa-TPI) - Draft looks promising, as the simplest way for developers to deploy to Kubernetes. 
