@@ -28,3 +28,5 @@
 [Use external-dns to assign DNS hostname automatically to deployed containers](https://github.com/kubernetes-incubator/external-dns]) - The next thing I'm learning. Once I deploy I want a DNS name to be assigned automatically.
 
 [Draft configuration walkthrough on YouTube](https://www.youtube.com/watch?v=7N7vdOa-TPI) - Draft looks promising, as the simplest way for developers to deploy to Kubernetes. 
+
+[Google Slides](https://docs.google.com/presentation/d/1ANxFp76zgzCj_b4CZw6U9Qevf0hRVjJR6rZoPSTkhu0/edit?usp=sharing)
