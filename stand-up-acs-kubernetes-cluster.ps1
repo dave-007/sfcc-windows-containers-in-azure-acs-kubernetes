@@ -8,7 +8,7 @@ Run form VSCODE in PowerShell terminal, run indiviual lines with F8
 
 REFERENCES:
 http://www.fladotnet.com/codecamp
-
+See also .\url-reference.md
 
 AUTHOR:
 David Cobb david@davidcobb.net
@@ -27,10 +27,14 @@ az account show
 
 #MAKE AN SSH KEY, public and private key file, password optional
 #see url-reference.md for how to create SSH keys
-#run from command line and follow prompts, doesn't work within vscode powershell terminal
+#run next line from command line and follow prompts, doesn't work within vscode powershell terminal
 ssh-keygen -t rsa -b 2048
 #view key files
 $myWorkingFolder = 'C:\Users\David\Documents\_projects\CodeCamp'
+
+#NOTE: There is an alternative to creating your own keys.
+#You can create your ACS Kubernetes cluster with a --generate-ssh-keys parameter, and it will create the ssh keys for you.
+#I chose to manage my SSH keys explicitly to avoid confusion later. This is hard won knowledge. :)
 
 ls $myWorkingFolder
 #Store the paths to your public and private keys, know which is which!
@@ -74,6 +78,7 @@ az acs create --name $ACSClusterName --resource-group $newGroup.name --orchestra
 
 #create your new Azure ACS Kubernetes Cluster for Windows Containers!
 az acs create --name $ACSClusterName --resource-group $newGroup.name --orchestrator-type kubernetes --windows --admin-password $windowsPassword --agent-count 1 --service-principal $newServiceAccount.appId --client-secret $newServiceAccount.password --ssh-key-value $pathToSSHPublicKeyFile --debug
+
 #May take 10-20 minutes to run..
 
 #hopefull that succeeds, can review with az acr show --name ...
